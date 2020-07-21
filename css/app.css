@@ -1,0 +1,244 @@
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+/* helpers */
+hr {
+    position: relative;
+    display: block;
+    margin-top: 0;
+    border: 0;
+    height: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+hr,
+hr.tiny ,
+hr[tiny],
+hr[data-tiny] {
+    height: 1px;
+    background-color: #DDDDDD;
+}
+
+hr[stroke],
+hr[data-stroke],
+hr.stroke {
+    height: 2px;
+    background-color: #C4C4C4;
+}
+
+.shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+
+/* layout breakpoints */
+
+/* lg */
+@media only screen and (max-width: 960px) {}
+
+/* sm */
+@media only screen and (max-width: 480px) {}
+
+/* font & space breakpoints */
+
+/* md */
+@media only screen and (max-width: 768px) {}
+
+/* xlg */
+@media only screen and (max-width: 1024px) {}
+
+/* grid box */
+
+.grid-box {
+    margin: 0 -10px;
+    display: grid;
+}
+.grid-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    order: 1;
+    box-sizing: border-box;
+}
+.grid-item .grid-item {
+    padding-bottom: 0;
+}
+
+
+.grid-1 {
+    grid-template-columns: 1fr;
+}
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+@media only screen and (min-width: 481px) {
+    .grid-2-sm {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 961px) {
+    .grid-2-lg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 481px) {
+    .grid-4-sm {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (min-width: 961px) {
+    .grid-4-lg {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/* span columns */
+.span-x3 {
+    grid-column: 3 span;
+}
+.span-x5 {
+    grid-column: 5 span;
+}
+.span-x7 {
+    grid-column: 7 span;
+}
+.span-y {
+    grid-row: 1 / -1;
+}
+
+@media only screen and (min-width: 961px) {
+    .span-x3-lg {
+        grid-column: 3 span;
+    }
+}
+
+
+/* panel */
+.panel {
+    position: relative;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+.panel-container {
+    position: relative;
+    max-width: 1280px;
+    padding: 0 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* card */
+.card-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 480px) {
+    .card {
+        max-width: 320px;
+    }
+}
+.card-media {
+    position: relative;
+    margin-bottom: 16px;
+}
+.card-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+.card-body {
+    position: relative;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-category {
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: red;
+    text-transform: uppercase;
+}
+.card-category span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.card-category i.icon-box {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+    background-color: red;
+}
+h2.card-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 1;
+}
+h3.card-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.card-description {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+.card-description p {
+    margin: 0;
+}
+.card-info {
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: 300;
+    color: #aaa;
+}
+
+/* .card-big {} */
+.card-big .card-media {
+    margin-bottom: 0;
+}
+.card-big .card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card-big .card-info {
+    margin-top: 0;
+}
+@media only screen and (max-width: 960px) {
+    .card-big .card-media {
+        margin-bottom: 16px;
+    }
+}
