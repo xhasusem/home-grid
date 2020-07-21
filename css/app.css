@@ -52,30 +52,32 @@ hr.stroke {
 /* layout breakpoints */
 
 /* lg */
-@media only screen and (max-width: 960px) {}
-
-/* sm */
-@media only screen and (max-width: 480px) {}
-
-/* font & space breakpoints */
+@media only screen and (min-width: 960px) {}
 
 /* md */
-@media only screen and (max-width: 768px) {}
+@media only screen and (min-width: 640px) {}
 
-/* xlg */
+/* sm */
+@media only screen and (min-width: 480px) {}
+
+/* font & space breakpoints */
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 960px) {}
 @media only screen and (max-width: 1280px) {}
 
 /* grid box */
-
 .grid-box {
-    margin: 0 -10px;
     display: grid;
+    margin: 0 -10px;
+    grid-template-columns: 1fr;
 }
 .grid-item {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     display: flex;
+    min-height: 1px;
     order: 1;
     box-sizing: border-box;
 }
@@ -83,10 +85,6 @@ hr.stroke {
     padding-bottom: 0;
 }
 
-
-.grid {
-    grid-template-columns: 1fr;
-}
 .grid-2 {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -98,6 +96,11 @@ hr.stroke {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+@media only screen and (min-width: 640px) {
+    .grid-2-md {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media only screen and (min-width: 960px) {
     .grid-2-lg {
         grid-template-columns: repeat(2, 1fr);
@@ -105,6 +108,11 @@ hr.stroke {
 }
 @media only screen and (min-width: 480px) {
     .grid-4-sm {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (min-width: 640px) {
+    .grid-4-md {
         grid-template-columns: repeat(4, 1fr);
     }
 }
