@@ -132,17 +132,17 @@ hr.stroke {
 .grid-8 {
     grid-template-columns: repeat(8, 1fr);
 }
-@media only screen and (min-width: 480px) {
-    .grid-2-sm {
+@media only screen and (min-width: 960px) {
+    .grid-2-lg {
         grid-template-columns: repeat(2, 1fr);
     }
-    .grid-4-sm {
+    .grid-4-lg {
         grid-template-columns: repeat(4, 1fr);
     }
-    .grid-6-sm {
+    .grid-6-lg {
         grid-template-columns: repeat(6, 1fr);
     }
-    .grid-8-sm {
+    .grid-8-lg {
         grid-template-columns: repeat(8, 1fr);
     }
 }
@@ -160,17 +160,17 @@ hr.stroke {
         grid-template-columns: repeat(8, 1fr);
     }
 }
-@media only screen and (min-width: 960px) {
-    .grid-2-lg {
+@media only screen and (min-width: 480px) {
+    .grid-2-sm {
         grid-template-columns: repeat(2, 1fr);
     }
-    .grid-4-lg {
+    .grid-4-sm {
         grid-template-columns: repeat(4, 1fr);
     }
-    .grid-6-lg {
+    .grid-6-sm {
         grid-template-columns: repeat(6, 1fr);
     }
-    .grid-8-lg {
+    .grid-8-sm {
         grid-template-columns: repeat(8, 1fr);
     }
 }
@@ -211,32 +211,32 @@ hr.stroke {
     grid-row: 1 / -1;
 }
 
-@media only screen and (min-width: 960px) {
-    .sp-x2-lg {
+@media only screen and (min-width: 480px) {
+    .sp-x2-sm {
         grid-column: 2 span;
     }
-    .sp-x3-lg {
+    .sp-x3-sm {
         grid-column: 3 span;
     }
-    .sp-x4-lg {
+    .sp-x4-sm {
         grid-column: 4 span;
     }
-    .sp-x5-lg {
+    .sp-x5-sm {
         grid-column: 5 span;
     }
-    .sp-x6-lg {
+    .sp-x6-sm {
         grid-column: 6 span;
     }
-    .sp-x7-lg {
+    .sp-x7-sm {
         grid-column: 7 span;
     }
-    .sp-x8-lg {
+    .sp-x8-sm {
         grid-column: 8 span;
     }
-    .sp-x9-lg {
+    .sp-x9-sm {
         grid-column: 9 span;
     }
-    .sp-x10-lg {
+    .sp-x10-sm {
         grid-column: 10 span;
     }
 }
@@ -271,36 +271,35 @@ hr.stroke {
     }
 }
 
-@media only screen and (min-width: 480px) {
-    .sp-x2-sm {
+@media only screen and (min-width: 960px) {
+    .sp-x2-lg {
         grid-column: 2 span;
     }
-    .sp-x3-sm {
+    .sp-x3-lg {
         grid-column: 3 span;
     }
-    .sp-x4-sm {
+    .sp-x4-lg {
         grid-column: 4 span;
     }
-    .sp-x5-sm {
+    .sp-x5-lg {
         grid-column: 5 span;
     }
-    .sp-x6-sm {
+    .sp-x6-lg {
         grid-column: 6 span;
     }
-    .sp-x7-sm {
+    .sp-x7-lg {
         grid-column: 7 span;
     }
-    .sp-x8-sm {
+    .sp-x8-lg {
         grid-column: 8 span;
     }
-    .sp-x9-sm {
+    .sp-x9-lg {
         grid-column: 9 span;
     }
-    .sp-x10-sm {
+    .sp-x10-lg {
         grid-column: 10 span;
     }
 }
-
 
 /* panel */
 .panel {
