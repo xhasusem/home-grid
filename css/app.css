@@ -419,6 +419,18 @@ hr.stroke {
     box-sizing: border-box;
 }
 
+.panel-head {
+    position: relative;
+    margin-bottom: 16px;
+}
+.panel-title {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    color: red;
+    margin-bottom: 12px;
+}
+
 
 /* card */
 .card-flex {
@@ -436,11 +448,6 @@ hr.stroke {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-@media only screen and (max-width: 480px) {
-    .card {
-        max-width: 320px;
-    }
 }
 .card + .card {
     margin-top: 20px;
