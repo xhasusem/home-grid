@@ -53,6 +53,8 @@ hr.stroke {
     background-color: #DDD;
 }
 
+.pb-10{padding-bottom: 10px !important;}
+
 /* layout breakpoints */
 
 /* lg */
@@ -76,34 +78,34 @@ hr.stroke {
     margin: 0 -10px;
     grid-template-columns: 1fr;
 }
-.grid-box.x12 {
-    grid-template-columns: repeat(12, 1fr);
-}
 .grid-box.x16 {
     grid-template-columns: repeat(16, 1fr);
 }
-@media only screen and (min-width: 960px) {
-    .grid-box.x12-lg {
-        grid-template-columns: repeat(12, 1fr);
-    }
-    .grid-box.x16-lg {
-        grid-template-columns: repeat(16, 1fr);
-    }
-}
-@media only screen and (min-width: 640px) {
-    .grid-box.x12-md {
-        grid-template-columns: repeat(12, 1fr);
-    }
-    .grid-box.x16-md {
-        grid-template-columns: repeat(16, 1fr);
-    }
+.grid-box.x12 {
+    grid-template-columns: repeat(12, 1fr);
 }
 @media only screen and (min-width: 480px) {
+    .grid-box.x16-sm {
+        grid-template-columns: repeat(16, 1fr);
+    }
     .grid-box.x12-sm {
         grid-template-columns: repeat(12, 1fr);
     }
-    .grid-box.x16-sm {
+}
+@media only screen and (min-width: 640px) {
+    .grid-box.x16-md {
         grid-template-columns: repeat(16, 1fr);
+    }
+    .grid-box.x12-md {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+@media only screen and (min-width: 960px) {
+    .grid-box.x16-lg {
+        grid-template-columns: repeat(16, 1fr);
+    }
+    .grid-box.x12-lg {
+        grid-template-columns: repeat(12, 1fr);
     }
 }
     
@@ -321,6 +323,11 @@ hr.stroke {
 .card-flex {
     display: flex;
     flex-direction: column;
+}
+.card-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
 }
 
 .card {
