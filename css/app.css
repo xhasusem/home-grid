@@ -224,6 +224,7 @@ hr.compact {
 }
     
 .grid-item {
+    position: relative;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -523,6 +524,16 @@ hr.compact {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 960px) {
+    .panel-container {
+        max-width: 720px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .panel-container {
+        max-width: 440px;
+    }
+}
 
 /* card */
 .card-flex {
