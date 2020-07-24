@@ -237,6 +237,13 @@ hr.compact {
     padding-bottom: 0;
 }
 
+.grid-item.br-left::after {
+    left: 0;
+}
+.grid-item.br-right::after {
+    right: 0;
+}
+
 .grid-2 {
     grid-template-columns: repeat(2, 1fr);
 }
