@@ -53,9 +53,15 @@ h6 {
 }
 p {
     margin-top: 0;
+    margin-bottom: 8px;
     font-size: 15px;
     line-height: 1.4;
-    margin-bottom: 8px;
+}
+small {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 1.2;
 }
 
 /* layout container/section */
@@ -83,12 +89,16 @@ p {
 }
 .section-title {
     font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
     line-height: 1;
     color: red;
     margin-bottom: 16px;
 }
 .section-subtitle {
     font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
     line-height: 1;
     color: red;
     margin-bottom: 12px;
@@ -167,8 +177,11 @@ hr.compact {
     background-color: #DDD;
 }
 
+.pb-0 {padding-bottom: 0 !important;}
 .pb-10 {padding-bottom: 10px !important;}
+.mb-0  {margin-bottom: 0 !important;}
 .mb-8  {margin-bottom: 8px !important;}
+.mb-10  {margin-bottom: 10px !important;}
 .mb-12 {margin-bottom: 12px !important;}
 .mb-16 {margin-bottom: 16px !important;}
 
@@ -424,6 +437,31 @@ hr.compact {
         grid-column: 11 span;
     }
 }
+
+/* hidden */
+.hidden {
+    visibility: hidden !important;
+    display: none !important;
+}
+@media only screen and (max-width: 480px) {
+    .hidden-sm {
+        visibility: hidden !important;
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .hidden-md {
+        visibility: hidden !important;
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .hidden-lg {
+        visibility: hidden !important;
+        display: none !important;
+    }
+}
+    
 
 /* orders */
 .order-0 {
